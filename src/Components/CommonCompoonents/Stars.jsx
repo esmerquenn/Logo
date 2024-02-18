@@ -1,15 +1,16 @@
 import React from "react";
 import { FaRegStar, FaStar } from "react-icons/fa6";
 
-function Stars() {
+function Stars({ countFull, countEmpty }) {
   return (
-    <div className="star">
-      <FaStar />
-      <FaStar />
-      <FaStar />
-      <FaStar />
-      <FaRegStar />
-    </div>
+    <p className="star">
+      {Array.from({ length: countFull }, (_, index) => (
+        <FaStar key={index} />
+      ))}
+      {Array.from({ length: countEmpty }, (_, index) => (
+        <FaRegStar key={index} />
+      ))}
+    </p>
   );
 }
 

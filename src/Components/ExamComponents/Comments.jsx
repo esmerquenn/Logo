@@ -1,18 +1,10 @@
 import React from "react";
 import Stars from "../CommonCompoonents/Stars";
-import { BiSolidMessageDots } from "react-icons/bi";
-import { FaRegStar, FaStar } from "react-icons/fa6";
-
+import Number from "./Number";
 function Comments() {
   return (
     <div className="comments container ">
-      <div className="number">
-        <span className="num">4.9</span>
-        <span className="num2">
-          <BiSolidMessageDots />
-          440 rəy
-        </span>
-      </div>
+     <Number/>
       <div className="stars">
         <div className="nums">
           <span>378</span>
@@ -22,12 +14,11 @@ function Comments() {
           <span>8</span>
         </div>
         <div className="starsss">
-          <Stars />
-          <Stars />
-          <Stars />
-          <Stars />
-          <Stars />
-          <Stars />
+          <Stars countFull={5} countEmpty={0} />
+          <Stars countFull={4} countEmpty={1} />
+          <Stars countFull={3} countEmpty={2} />
+          <Stars countFull={2} countEmpty={3} />
+          <Stars countFull={1} countEmpty={4} />
         </div>
         <div className="ranges">
           <div className="range r1"></div>
@@ -42,5 +33,3 @@ function Comments() {
 }
 
 export default Comments;
-
-

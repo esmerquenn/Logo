@@ -6,12 +6,12 @@ function CommentsList() {
   return (
     <div className="commentList container">
       {Array.from({ length: cardCount }, (_, index) => (
-        <div className="c_list">
+        <div key={index} className="c_list">
           <h5>İlaha Nazarova</h5>
-          <p className="p">
-            <Stars />2 gün əvvəl
-          </p>
-          <p>
+          <div className="comment_p">
+            <Stars countFull={4} countEmpty={1} />2 gün əvvəl
+          </div>
+          <p className="comment_1p">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
             standard
           </p>

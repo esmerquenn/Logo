@@ -18,8 +18,7 @@ function CardsExam() {
           <div className="rey">
             <Second icon={<GoClockFill className="point" />} title={"45 dəqiqə"} />
             <div className="right">
-             <Stars/>
-
+            <Stars countFull={4} countEmpty={1} />
               <p>
                 <TbPointFilled className="point" />2 rəy
               </p>
