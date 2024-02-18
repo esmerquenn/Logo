@@ -54,7 +54,6 @@ h1 {
 .more,
 .tel,
 .mail,
-.exam_btn,
 .num2 {
   font: 500 1em/1.5 Montserrat;
 }
@@ -402,6 +401,7 @@ h6 {
 }
 
 .exam_btn {
+  font: 500 0.9em Montserrat;
   background: #fff;
 
   padding: 5px;
@@ -757,6 +757,7 @@ h6 {
   }
 
   .exam_btn {
+    font-size: 1em;
     width: 179px;
   }
 

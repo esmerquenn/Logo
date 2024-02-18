@@ -17,7 +17,7 @@ function Navbar() {
             <HiMiniBars3 className="fa-bars" onClick={toggle} />
             <div className={`div-hide ${openMenu ? "open_menu" : ""} `}>
             <HiMiniXMark className="fa-x" onClick={toggle} />
-              <NavMenu toggle={()=>toggle()} />
+              <NavMenu toggle={()=>toggle()} {...{openMenu, setOpenMenu}} />
             </div>
           </div>
           <div className="btn">
